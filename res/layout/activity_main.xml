@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_name"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/lblEmpNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_empNo"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/lblMailaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_mailaddress"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/lblGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_gender"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/lblBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_birthday"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/lblTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_tel"
+                android:textSize="@dimen/userInfoFontSize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userInfoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/userInfo_name"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/userInfoEmpNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_empNo"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/userInfoMailaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_mailaddress"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/userInfoGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_gender"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/userInfoBirthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_birthday"
+                android:textSize="@dimen/userInfoFontSize" />
+
+            <TextView
+                android:id="@+id/userInfoTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/userInfo_tel"
+                android:textSize="@dimen/userInfoFontSize" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:background="#666"
+        android:text="ユーザ 一覧"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="title_activity_main">リスト</string>
+
+    <!-- Strings related to login -->
+    <string name="userInfo_name">氏名</string>
+    <string name="userInfo_empNo">社員番号</string>
+    <string name="userInfo_mailaddress">メアド</string>
+    <string name="userInfo_gender">性別</string>
+    <string name="userInfo_birthday">生年月日</string>
+    <string name="userInfo_tel">電話番号</string>
+
+    <string name="action_useradd">ユーザ追加</string>
+</resources>
