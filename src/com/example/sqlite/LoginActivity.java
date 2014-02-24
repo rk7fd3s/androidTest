@@ -3,7 +3,7 @@ package com.example.sqlite;
 import com.example.sqlite.db.UserInfo;
 import com.example.sqlite.db.UserInfoDao;
 
-import jp.co.solcreo.sample.sqlite.R;
+import com.example.sqlite.R;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -75,7 +75,7 @@ public class LoginActivity extends Activity {
 						attemptLogin();
 					}
 				});
-		
+
 //		UserInfoDao dao  = new UserInfoDao(LoginActivity.this);
 //		dao.init();
 	}
@@ -152,7 +152,7 @@ public class LoginActivity extends Activity {
 	public class UserLoginTask extends AsyncTask<Void, Void, UserInfo> {
         // 処理中ダイアログ
         private ProgressDialog progressDialog = null;
-        
+
         @Override
         protected void onPreExecute() {
                 // バックグラウンドの処理前にUIスレッドでダイアログ表示
@@ -185,13 +185,13 @@ public class LoginActivity extends Activity {
 		protected void onPostExecute(final UserInfo userInfo) {
 			// 処理中ダイアログをクローズ
             progressDialog.dismiss();
-            
+
 			mAuthTask = null;
 
 			// nullじゃなければログイン成功
 			if (userInfo != null) {
 				Intent mainIntent = new Intent();
-				mainIntent.setClassName("jp.co.solcreo.sample.sqlite", "jp.co.solcreo.sample.sqlite.MainActivity");
+				mainIntent.setClassName("com.example.sqlite", "com.example.sqlite.MainActivity");
 				mainIntent.putExtra(UserInfo.TABLE_NAME, userInfo);
 				startActivity(mainIntent);
 			} else {

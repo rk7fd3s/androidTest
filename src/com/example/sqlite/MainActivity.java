@@ -6,7 +6,7 @@ import com.example.sqlite.db.UserDetail;
 import com.example.sqlite.db.UserDetailDao;
 import com.example.sqlite.db.UserInfo;
 
-import jp.co.solcreo.sample.sqlite.R;
+import com.example.sqlite.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
